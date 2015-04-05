@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf8">
+  <title>Family Crib Sheet - Lizzy and Alan's wedding</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.0/css/materialize.min.css">
+  <style>
+    #filter .col:first-child p {
+      float: right;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <form id="filter">
+      <div class="row">
+        <div class="col s6">
+          <p>
+            <input type="checkbox" id="filter-lizzy" checked="checked" data-rel="lizzy" />
+            <label for="filter-lizzy">Lizzy</label>
+          </p>
+        </div>
+        <div class="col s6">
+          <p>
+            <input type="checkbox" id="filter-alan" checked="checked" data-rel="alan" />
+            <label for="filter-alan">Alan</label>
+          </p>
+        </div>
+      </div>
+    </form>
+    
+    <div id="cards" class="row">
+    </div><!--/.row-->
+
+  </div><!--/.container-->
+
+  <script id="card-tmpl" type="text/x-handlebars-template">
+    <div class="col l4 m6 s12">
+      <div id="{{id}}" class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="img/{{id}}.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">{{name}} <i class="mdi-navigation-more-vert right"></i></span>
+          <p><span rel="{{rel}}">{{ucfirst rel}}'s family</span></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">{{name}} <i class="mdi-navigation-close right"></i></span>
+          <p>{{desc}}</p>
+        </div>
+      </div><!--/#{{id}}-->
+    </div><!--/.col-->
+  </script>
+
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.0/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.1/handlebars.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
