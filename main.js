@@ -15,13 +15,6 @@
     return new Handlebars.SafeString(text[0].toUpperCase() + text.slice(1))
   })
 
-  Handlebars.registerHelper('avatarUrl', function(rel) {
-    if (rel == 'alan')
-      return 'img/alan.jpg'
-    else
-      return 'http://www.gravatar.com/avatar/af709d6510f1168921aef4ac53420f51'
-  })
-
   var data = [
     {
       id: 'sheila0',
