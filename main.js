@@ -15,120 +15,167 @@
     return new Handlebars.SafeString(text[0].toUpperCase() + text.slice(1))
   })
 
+  Handlebars.registerHelper('avatarUrl', function(rel) {
+    if (rel == 'alan')
+      return 'img/alan.jpg'
+    else
+      return 'http://www.gravatar.com/avatar/af709d6510f1168921aef4ac53420f51'
+  })
+
   var data = [
     {
       id: 'sheila0',
       name: 'Sheila Cockshaw',
       rel: 'alan',
-      desc: "Alan's grandmother. Known as Gran Gran by Alan's family."
+      shortDesc: "Alan's grandmother",
+      longDesc: "Alan's grandmother. Known as Gran Gran by Alan's family."
     },
     {
       id: 'richard',
       name: 'Richard Shaw',
       rel: 'alan',
-      desc: "Alan's Dad"
+      shortDesc: "Alan's Dad",
+      longDesc: "Richard is Alan's Dad"
     },
     {
       id: 'tina',
       name: 'Tina Shaw',
       rel: 'alan',
-      desc: "Alan's Mum"
+      shortDesc: "Alan's Mum",
+      longDesc: "Tina is Alan's Mum"
     },
     {
       id: 'annie',
       name: 'Anna Dickinson',
       rel: 'alan',
-      desc: "Anna is Alan's sister. She's called Annie by Alan and his parents (Tina & Richard)."
+      shortDesc: "Alan's sister",
+      longDesc: "Anna is Alan's sister. She's called Annie by Alan and his parents (Tina & Richard)."
     },
     {
       id: 'tony',
       name: 'Tony Dickinson',
       rel: 'alan',
-      desc: "Tony is Annie's husband. Annie is Alan's sister."
+      shortDesc: "Annie's husband",
+      longDesc: "Tony is Annie's husband. Annie is Alan's sister."
     },
     {
       id: 'rowan',
       name: 'Rowan Dickinson',
       rel: 'alan',
-      desc: "Rowan is Alan's niece, Anna's daughter."
+      shortDesc: "Alan's niece",
+      longDesc: "Rowan is Alan's niece, Anna's daughter."
     },
     {
       id: 'roger',
       name: 'Roger Coeshaw',
       rel: 'alan',
-      desc: "Roger is Alan's uncle."
+      shortDesc: "Alan's uncle",
+      longDesc: "Roger is Alan's uncle."
     },
     {
       id: 'ruth',
       name: 'Ruth Coeshaw',
       rel: 'alan',
-      desc: "Ruth is Roger's wife. Roger is Alan's uncle."
+      shortDesc: "Roger's wife",
+      longDesc: "Ruth is Roger's wife. Roger is Alan's uncle."
     },
     {
       id: 'joan',
       name: 'Joan Mallett',
       rel: 'lizzy',
-      desc: "Lizzy's grandmother, Ian's mother. Ian is Lizzy's Dad. Joan is known as Grandjo to Lizzy's family."
+      shortDesc: "Lizzy's grandmother",
+      longDesc: "Lizzy's grandmother, Ian's mother. Ian is Lizzy's Dad. Joan is known as Grandjo to Lizzy's family."
     },
     {
       id: 'ian',
       name: 'Ian Mallett',
       rel: 'lizzy',
-      desc: "Lizzy's Dad."
+      shortDesc: "Lizzy's Dad",
+      longDesc: "Lizzy's Dad. Known as Yanis by Ros (Lizzy's Mum)"
     },
     {
       id: 'ros',
       name: 'Ros Mallett',
       rel: 'lizzy',
-      desc: "Lizzy's Mum"
+      shortDesc: "Lizzy's Mum",
+      longDesc: "Lizzy's Mum"
     },
     {
       id: 'katherine',
-      name: 'Katherine Mallett',
+      name: 'Katherine Potsides',
       rel: 'lizzy',
-      desc: "Lizzy's older Sister"
+      shortDesc: "Lizzy's sister",
+      longDesc: "Lizzy's older Sister"
+    },
+    {
+      id: 'alex',
+      name: 'Alex Potsides',
+      rel: 'lizzy',
+      shortDesc: "Lizzy's brother-in-law",
+      longDesc: "Lizzy's brother-in-law"
     },
     {
       id: 'sheila1',
       name: 'Sheila Overton',
       rel: 'lizzy',
-      desc: "Lizzy's Aunt, Ros's sister. Ros is Lizzy's Mum"
+      shortDesc: "Lizzy's aunt",
+      longDesc: "Lizzy's aunt, Ros's sister. Ros is Lizzy's Mum"
     },
     {
       id: 'michael',
       name: 'Michael Overton',
       rel: 'lizzy',
-      desc: "Lizzy's Uncle. Shelia's husband."
+      shortDesc: "Lizzy's uncle",
+      longDesc: "Lizzy's uncle. Shelia's husband."
     },
     {
       id: 'james',
       name: 'James Overton',
       rel: 'lizzy',
-      desc: "Lizzy's cousin."
+      shortDesc: "Lizzy's cousin.",
+      longDesc: "Lizzy's cousin."
     },
     {
       id: 'george',
       name: 'George Overton',
       rel: 'lizzy',
-      desc: "Lizzy's cousin."
+      shortDesc: "Lizzy's cousin.",
+      longDesc: "Lizzy's cousin."
     },
     {
       id: 'kevin',
       name: 'Kevin Dean',
       rel: 'lizzy',
-      desc: "George's partner. George is Lizzy's cousin."
+      shortDesc: "George's partner.",
+      longDesc: "George's partner. George is Lizzy's cousin."
     },
     {
       id: 'richardf',
       name: 'Richard Ferrier',
       rel: 'lizzy',
-      desc: "Lizzy's cousin."
+      shortDesc: "Lizzy's cousin.",
+      longDesc: "Lizzy's cousin."
     },
     {
       id: 'sarah',
       name: 'Sarah Ferrier',
       rel: 'lizzy',
-      desc: "Lizzy's cousin."
+      shortDesc: "Lizzy's cousin.",
+      longDesc: "Lizzy's cousin."
+    },
+    {
+      id: 'carol',
+      name: 'Carol Ferrier',
+      rel: 'lizzy',
+      shortDesc: "Lizzy's aunt",
+      longDesc: "Lizzy's aunt"
+    },
+    {
+      id: 'hugh',
+      name: 'Hugh Ferrier',
+      rel: 'lizzy',
+      shortDesc: "Lizzy's uncle",
+      longDesc: "Lizzy's uncle"
     }
   ]
 

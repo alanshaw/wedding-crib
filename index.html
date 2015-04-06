@@ -9,6 +9,10 @@
     #filter .col:first-child p {
       float: right;
     }
+    .avatar {
+      width: 25px;
+      margin-right: 10px;
+    }
   </style>
 </head>
 <body>
@@ -44,11 +48,14 @@
         </div>
         <div class="card-content">
           <span class="card-title activator grey-text text-darken-4">{{name}} <i class="mdi-navigation-more-vert right"></i></span>
-          <p><span rel="{{rel}}">{{ucfirst rel}}'s family</span></p>
+          <p class="valign-wrapper">
+            <img class="avatar responsive-img circle valign" rel="{{rel}}" src="{{avatarUrl rel}}" title="{{ucfirst rel}}'s family">
+            <span class="valign">{{shortDesc}}</span>
+          </p>
         </div>
         <div class="card-reveal">
           <span class="card-title grey-text text-darken-4">{{name}} <i class="mdi-navigation-close right"></i></span>
-          <p>{{desc}}</p>
+          <p>{{longDesc}}</p>
         </div>
       </div><!--/#{{id}}-->
     </div><!--/.col-->
