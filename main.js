@@ -16,13 +16,13 @@
   })
 
   var data = [
-    {
+    /*{
       id: 'sheila0',
       name: 'Sheila Cockshaw',
       rel: 'alan',
       shortDesc: "Alan's grandmother",
       longDesc: "Alan's grandmother. Known as Gran Gran by Alan's family."
-    },
+    },*/
     {
       id: 'richard',
       name: 'Richard Shaw',
