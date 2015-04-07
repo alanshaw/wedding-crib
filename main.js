@@ -48,8 +48,8 @@
       id: 'tony',
       name: 'Tony Dickinson',
       rel: 'alan',
-      shortDesc: "Annie's husband",
-      longDesc: "Tony is Annie's husband. Annie is Alan's sister."
+      shortDesc: "Anna's husband",
+      longDesc: "Tony is Annie's husband. Anna is Alan's sister."
     },
     {
       id: 'rowan',
@@ -67,10 +67,10 @@
     },
     {
       id: 'ruth',
-      name: 'Ruth Coeshaw',
+      name: 'Ruth Kimmins',
       rel: 'alan',
-      shortDesc: "Roger's wife",
-      longDesc: "Ruth is Roger's wife. Roger is Alan's uncle."
+      shortDesc: "Roger's partner",
+      longDesc: "Ruth is Roger's partner. Roger is Alan's uncle."
     },
     {
       id: 'joan',
@@ -169,6 +169,20 @@
       rel: 'lizzy',
       shortDesc: "Lizzy's uncle",
       longDesc: "Lizzy's uncle"
+    },
+    {
+      id: 'pamela',
+      name: 'Pamela Parkes',
+      rel: 'alan',
+      shortDesc: "Alan's Mum's cousin",
+      longDesc: "Alan's Mum's cousin. Alan's Mum is Tina"
+    },
+    {
+      id: 'andy',
+      name: 'Andy Parkes',
+      rel: 'alan',
+      shortDesc: "Pamela's husband",
+      longDesc: "Andy is Pamela's husband. Pamela is Alan's Mum's cousin. Alan's Mum is Tina"
     }
   ]
 
