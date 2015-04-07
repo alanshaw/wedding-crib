@@ -49,7 +49,7 @@
       name: 'Tony Dickinson',
       rel: 'alan',
       shortDesc: "Anna's husband",
-      longDesc: "Tony is Annie's husband. Anna is Alan's sister."
+      longDesc: "Tony is Anna's husband. Anna is Alan's sister."
     },
     {
       id: 'rowan',
